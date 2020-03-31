@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: fuente-numero-1, sans-serif;
+}
 @font-face {
   font-family: fuente-numero-1;
   src: url("../fuentes/Assistant-Bold.ttf");
