@@ -16,12 +16,38 @@ html(lang="es")
     header.header
       div.header__mobileMenu
         div.header_mobileMenu__position
-          a(href="#" class=".header__mobileMenu__icon")
-            spam.icon-menu
+          a(href="#" class="boton")
+            span.icon-menu
           div(href="#" class="header__mobileMenu__language")
             a(href="#" class="header__mobileMenu__language--spanish"): spam Esp
-              spam |
             a(href="#" class="header__mobileMenu__language--english"): spam Ing
       div.header__fondo    
-        
-      
+      div.header__logo
+      div.header__mensaje
+        h3 Aporta al mundo con soluciones, dale la oportunidad a las energias renovables.
+      div.header__desplegable#nav
+        div.header__desplegable__volver
+          a(href="#" class="boton"): span.icon-close
+        div.header__desplegable__logo
+          img(class="header__desplegable__logo--logotipo" src="../images/logo.png" alt="Logotipo de la compañia")
+        ul.header__desplegable__options
+          li(class="header__desplegable--boton1 "): a(href="#" class="") INICIO
+          li(class="header__desplegable--boton1 header__desplegable--boton2"): a(href="#" class="") QUIENES SOMOS
+          li(class="header__desplegable--boton1 header__desplegable--boton2"): a(href="#" class="") SERVICIOS
+          li(class="header__desplegable--boton1 "): a(href="#" class="") CONTACTO
+        div.header__desplegable__socialMedia
+          a(href="#")
+            div.header__desplegable__socialMedia__facebook
+              span(class="icon-facebook-with-circle")
+          a(href="#")
+            div.header__desplegable__socialMedia__instagram
+              span(class="icon-instagram")
+          a(href="#")
+            div.header__desplegable__socialMedia__twitter
+              span(class="icon-twitter-with-circle")
+          a(href="#")
+            div.header__desplegable__socialMedia__youtube
+              span(class="icon-youtube")
+  
+  script(src="../script/jquery-3.4.1.min.js")
+  script(src="../script/script.js" charset="utf-8")

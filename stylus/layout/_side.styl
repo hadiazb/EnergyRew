@@ -1,14 +1,14 @@
 // Estilos para header
 .header
-  height: 100vh;
+  height: 80vh;
   position: relative;
-  border: 1px solid red
 
 .header__mobileMenu
   mixin-container(margin-left-right)
   position: fixed;
   width: 92%;
   height: 40px;
+  z-index: 10
   background-color: transparent
 .header_mobileMenu__position
   width: 100%
@@ -21,4 +21,82 @@
 .header__fondo
   height: inherit;
   width: 100%
-  background-color: rgb(32, 43, 129)
+  position: absolute;
+  z-index: 0
+  background-image: url(../images/portada.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: .6
+
+.header__logo
+  position: absolute;
+  width: 180px
+  height: altoLogo
+  margin: 80px calc(50% - 180px / 2)
+  z-index:1
+  background-color: rgb(215, 67, 194)
+
+.header__mensaje
+  position: absolute;
+  width: 290px
+  margin: 0 calc(50% - 290px / 2)
+  top: 230px
+  z-index: 2
+  text-align: center;
+  font-family: fuente-numero-7
+  font-size: xd-font-size
+  color: color-claro
+  text-shadow: 1px 1px 10px color-oscuro
+
+.header__desplegable
+  width: 280px
+  height: 550px
+  position: absolute;
+  top: 0
+  left: -280px
+  transition: all 2s;
+  z-index: 20
+  background: rgb(150, 150, 150)
+  box-shadow: 5px 0 10px color-oscuro
+.header__desplegable__volver
+  height: 60px
+  mixin-container(margin-left-right)
+  mixin-display-flex-menu(flex-end, center)
+  font-size: xd-font-size
+.icon-close
+  color: color-claro
+  text-shadow: 1px 1px 3px color-oscuro
+.header__desplegable__logo
+  height: 120px
+  mixin-display-flex-center(center)
+  mixin-container(margin-left-right)
+.header__desplegable__options
+  height: 250px
+  mixin-container(margin-left-right)
+.header__desplegable--boton1
+  height: 40px
+  margin: 25px 50px
+  line-height: 40px
+  text-align: center;
+  font-size: mediun-font-size
+.header__desplegable--boton1 a
+  color: color-claro
+  font-family: fuente-numero-8
+  text-shadow: 0 0 3px color-oscuro
+.header__desplegable--boton2
+  border-radius: 7px
+  background-color: rgb(46, 116, 167)
+.header__desplegable__socialMedia
+  height: 80px
+  mixin-display-flex-center(center)
+  mixin-container(margin-left-right)
+[class^="header__desplegable__socialMedia__"]
+  height: 40px
+  width: 40px
+  margin: 5px
+  mixin-display-flex-center(center)
+  border-radius: 50%
+  font-size: xd-font-size
+  background-color: color-claro
+  color: rgb(150, 150, 150)
