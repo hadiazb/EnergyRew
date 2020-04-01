@@ -1,3 +1,37 @@
+.header {
+  height: 100vh;
+  position: relative;
+  border: 1px solid #f00;
+}
+.header__mobileMenu {
+  margin: 0 4%;
+  position: fixed;
+  width: 92%;
+  height: 40px;
+  background-color: transparent;
+}
+.header_mobileMenu__position {
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1em;
+}
+.icon-menu {
+  font-size: 1.8em;
+}
+.header__fondo {
+  height: inherit;
+  width: 100%;
+  background-color: #202b81;
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -6,6 +40,14 @@
 }
 body {
   font-family: fuente-numero-1, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+ol {
+  list-style: none;
 }
 @font-face {
   font-family: fuente-numero-1;

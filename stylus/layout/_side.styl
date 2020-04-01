@@ -1,0 +1,24 @@
+// Estilos para header
+.header
+  height: 100vh;
+  position: relative;
+  border: 1px solid red
+
+.header__mobileMenu
+  mixin-container(margin-left-right)
+  position: fixed;
+  width: 92%;
+  height: 40px;
+  background-color: transparent
+.header_mobileMenu__position
+  width: 100%
+  height: inherit;
+  mixin-display-flex-menu(space-between, center)
+  font-size: mediun-font-size
+.icon-menu
+  font-size: xd-font-size
+
+.header__fondo
+  height: inherit;
+  width: 100%
+  background-color: rgb(32, 43, 129)

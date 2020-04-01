@@ -4,10 +4,24 @@ html(lang="es")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    meta(name="author" content="Hugo Andrés Díaz Bernal")
+    meta(name="description" content="La energia tanto en colombia como en el mundo es un recurso que  se relaciona con el progreso, por tal motivo el uso apropiado es de vital importancia, en ReweOptim Energy contamos con soluciones que nos permiten hacer gestion de la eficiencia energetica en el pais")
     
-    link(rel="stylesheet" href="./style/style.css")
+    link(rel="stylesheet" href="./css/style.css")
+    link(rel="stylesheet" href="./fonts/style.css")
     
     title RenewOpti Energy
     
   body
-    header
+    header.header
+      div.header__mobileMenu
+        div.header_mobileMenu__position
+          a(href="#" class=".header__mobileMenu__icon")
+            spam.icon-menu
+          div(href="#" class="header__mobileMenu__language")
+            a(href="#" class="header__mobileMenu__language--spanish"): spam Esp
+              spam |
+            a(href="#" class="header__mobileMenu__language--english"): spam Ing
+      div.header__fondo    
+        
+      
