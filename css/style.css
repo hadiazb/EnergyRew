@@ -24,7 +24,7 @@ ol {
   position: fixed;
   width: 92%;
   height: 40px;
-  z-index: 10;
+  z-index: 100;
   background-color: transparent;
 }
 .header_mobileMenu__position {
@@ -61,7 +61,9 @@ ol {
   height: 80px;
   margin: 80px calc(50% - 180px / 2);
   z-index: 1;
-  background-color: #d743c2;
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .header__mensaje {
   position: absolute;
@@ -80,7 +82,7 @@ ol {
   height: 550px;
   position: absolute;
   top: 0;
-  left: -280px;
+  right: 100%;
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
