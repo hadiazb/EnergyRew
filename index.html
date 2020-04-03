@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
     <meta name="description" content="La energia tanto en colombia como en el mundo es un recurso que  se relaciona con el progreso, por tal motivo el uso apropiado es de vital importancia, en ReweOptim Energy contamos con soluciones que nos permiten hacer gestion de la eficiencia energetica en el pais">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/style.css">
-    <script src="./script/jquery-3.4.1.min.js"></script>
-    <script src="./script/script.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./script/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./script/script.js" charset="utf-8"></script>
     <title>RenewOpti Energy</title>
   </head>
   <body>
@@ -17,8 +17,8 @@
       <div class="header__mobileMenu">
         <div class="header_mobileMenu__position"><a class="boton" href="#"><span class="icon-menu"></span></a>
           <div class="header__mobileMenu__language" href="#"><a class="header__mobileMenu__language--spanish" href="#">
-              <spam>Esp</spam></a><a class="header__mobileMenu__language--english" href="#">
-              <spam>Ing</spam></a></div>
+              <spam>SPA</spam></a><a class="header__mobileMenu__language--english" href="#">
+              <spam>ENG</spam></a></div>
         </div>
       </div>
       <div class="header__fondo">   </div>
@@ -33,7 +33,7 @@
           <li class="header__desplegable--boton1 "><a href="#">INICIO</a></li>
           <li class="header__desplegable--boton1 header__desplegable--boton2"><a href="#">QUIENES SOMOS</a></li>
           <li class="header__desplegable--boton1 header__desplegable--boton2"><a href="#">SERVICIOS</a></li>
-          <li class="header__desplegable--boton1 "><a href="#">CONTACTO</a></li>
+          <li class="header__desplegable--boton1 "><a href="#">CONTÁCTO</a></li>
         </ul>
         <div class="header__desplegable__socialMedia"><a href="#">
             <div class="header__desplegable__socialMedia__facebook"><span class="icon-facebook-with-circle"></span></div></a><a href="#">
@@ -42,5 +42,23 @@
             <div class="header__desplegable__socialMedia__youtube"><span class="icon-youtube"></span></div></a></div>
       </div>
     </header>
+    <section class="servicios">
+      <div class="servicios__head">
+        <h3>Nuestros Servicios </h3>
+      </div>
+      <div class="servicios__sliders">
+        <div class="miSlide fade"><img src="./images/image.jpg" alt="imagesnes de servicios">
+          <h3> Servicio Uno</h3>
+        </div>
+        <div class="miSlide fade"><img src="./images/image.jpg" alt="imagesnes de servicios">
+          <h3> Servicio Dos</h3>
+        </div>
+        <div class="miSlide fade"><img src="./images/image.jpg" alt="imagesnes de servicios">
+          <h3> Servicio Tres</h3>
+        </div>
+        <div class="direcciones"><a class="atras" href="#" onclick="avanzaSlide(-1)">&#10094;  </a><a class="atras" href="#" onclick="avanzaSlide(-1)">&#10095;</a></div>
+        <div class="barras"><span class="barra active" onclick="posicionSlide(1)">     </span><span class="barra active" onclick="posicionSlide(1)">     </span><span class="barra active" onclick="posicionSlide(1)"></span></div>
+      </div>
+    </section>
   </body>
 </html>
