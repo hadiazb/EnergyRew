@@ -301,6 +301,58 @@ ol {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
 }
+footer {
+  background-color: #27ecc3;
+}
+.footer {
+  margin: 0 4%;
+}
+.footer__contacto {
+  width: 280px;
+  height: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+[class^="footer__contacto__"] {
+  width: 100%;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1em;
+}
+.contenedor__icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  color: #27ecc3;
+}
+.contenedor__data {
+  width: calc(100% - 40px);
+  height: 40px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-stard;
+  -ms-flex-pack: flex-stard;
+  justify-content: flex-stard;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.7em;
+  font-family: fuente-numero-1;
+}
 @-moz-keyframes fade {
   from {
     opacity: 0.4;

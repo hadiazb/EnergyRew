@@ -200,3 +200,34 @@
   from {opacity: .4;}
   to{opacity:1;}
 }
+
+footer
+  background-color: color-primario
+.footer
+  // display: flex;
+  // flex-wrap: wrap;
+  mixin-container(margin-left-right)
+.footer__contacto
+  width: 280px
+  height: 200px
+  margin: 0 auto
+  padding-top: 10px
+[class^="footer__contacto__"]
+  width: 100%
+  height: 33.3%
+  display: flex;
+  font-size: mediun-font-size
+.contenedor__icon
+  width: 40px
+  height: 40px
+  mixin-display-flex-center(center)
+  border-radius: 50%
+  background-color: rgba(255, 255, 255, 0.5)
+  color: color-primario
+.contenedor__data
+  width: calc(100% - 40px)
+  height: 40px
+  padding: 0 40px
+  mixin-display-flex-menu(flex-stard, center)
+  font-size: small-font-size
+  font-family: fuente-numero-1
